@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vitapex - Healthy Lifestyle, News, Researches Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+
+
+
+    <style>
+        .newsletter-section {
+            background-image: url('https://img.freepik.com/free-photo/full-shot-woman-doing-plank-outside_23-2148717270.jpg?w=2000&t=st=1688756647~exp=1688757247~hmac=31239a3c7b8ce192e091f717b752e4e0d33363c644015e83664792bf073902a6');
+        }
+    </style>
+    <style>
+        .nav-wrapper {
+            height: 4rem;
+            /* Set the desired height for the navigation bar */
+        }
+    </style>
+
+</head>
+
+<body class="text-gray-700 bg-gray-100">
+    <header class="fixed top-0 left-0 z-50 w-full text-white bg-white">
+
+        <nav class="p-6 bg-white shadow">
+            <div class="container flex items-center justify-between mx-auto">
+
+                <a>
+                    <h1 class="text-4xl font-bold text-center text-gray-800 logo-font">
+                        Vita<span class="text-blue-400">Pex</span>
+                    </h1>
+                </a>
+
+                <!-- <div class="space-x-4">
+                    <a href="#about" class="text-gray-500 hover:text-gray-700">About Us</a>
+                    <a href="#causes" class="text-gray-500 hover:text-gray-700">Causes</a>
+                    <a href="#treatment" class="text-gray-500 hover:text-gray-700">Treatment</a>
+                    <a href="#resources" class="text-gray-500 hover:text-gray-700">Resources</a>
+                    <a href="#contact" class="text-gray-500 hover:text-gray-700">Contact</a>
+                </div> -->
+            </div>
+        </nav>
+    </header>
+
+
+    <section class="py-20 bg-blue-100">
+        <div class="container px-4 mx-auto">
+            <h2 class="mt-10 mb-6 text-4xl font-bold text-center">Discover the Secrets to a Healthy Life</h2>
+            <p class="mb-8 text-lg text-center">Explore our articles and find expert advice on nutrition, fitness,
+                mental well-being, and more.</p>
+            <div class="flex justify-center">
+                <a href="#recent-posts"
+                    class="inline-block px-6 py-3 text-white transition-colors duration-300 bg-blue-500 rounded-full hover:bg-blue-700">Get
+                    Started</a>
+            </div>
+        </div>
+    </section>
+    <section class="py-8 bg-white">
+        <div class="container px-4 mx-auto">
+            <h2 class="mb-4 text-2xl font-bold">About Us</h2>
+            <p class="mb-4">Welcome to Health Blog! We are a team of passionate health enthusiasts dedicated to
+                providing reliable and up-to-date information on various health topics.</p>
+            <p class="mb-4">Our mission is to empower individuals to make informed decisions about their health and
+                well-being. Through our articles, we aim to educate, inspire, and motivate our readers to adopt
+                healthy
+                lifestyle choices.</p>
+            <p class="mb-4">Whether you're looking for tips on nutrition, exercise, mental wellness, or general
+                health
+                advice, we've got you covered. Our team of experts curates content that is evidence-based and
+                practical.
+            </p>
+            <p class="mb-4">Join us on this journey towards better health and discover the secrets to living a
+                happy,
+                balanced life.</p>
+        </div>
+    </section>
+    <section class="py-8 bg-gray-100">
+        <div class="container px-4 mx-auto">
+            <h2 class="mb-4 text-2xl font-bold">Featured Article:</h2>
+            <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
+                <!-- Post 3 -->
+                <div class="flex flex-col p-6 bg-white rounded-lg shadow">
+                    <img class="object-fill w-full h-64 rounded-t-lg" src="/images/swim.jpg" alt="Post 3">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold">Unlock Your Swimming Potential: Master Swim Techniques for
+                            Optimal Performance </h3>
+                        <p>From mastering the freestyle stroke to perfecting your
+                            breathing technique, we provide valuable insights, step-by-step instructions, and helpful
+                            tips from seasoned swimmers and coaches. Get ready to make a splash and take your swimming
+                            skills to the next level! </p>
+                    </div>
+                    <div class="mt-auto"> <a href="posts/swim-techniques.html"
+                            class="inline-block px-4 py-2 text-white transition-colors duration-300 bg-blue-500 rounded-full hover:bg-blue-700">Learn
+                            More</a></div>
+                </div>
+                <!-- Post 2 -->
+                <div class="flex flex-col p-6 bg-white rounded-lg shadow">
+                    <img class="object-cover w-full h-64 rounded-t-lg" src="/images/stamina.jpg" alt="Post 2">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold">Stamina Training For General Health</h3>
+                        <p class="mt-2 text-gray-600">Enhance Your Endurance and Performance with Stamina Training.
+                            Improve your cardiovascular fitness, increase your stamina, and build your endurance levels
+                            through a variety of exercises and workouts designed to push your limits</p>
+                    </div>
+                    <div class="mt-auto"> <a href="/posts/stamina-training.html"
+                            class="inline-block px-4 py-2 text-white transition-colors duration-300 bg-blue-500 rounded-full hover:bg-blue-700">Learn
+                            More</a></div>
+                </div>
+                <!-- Add more exercises here -->
+            </div>
+        </div>
+    </section>
+
+
+    <section class="relative py-8 bg-gray-200 newsletter-section">
+        <div class="container px-4 mx-auto">
+            <div class="text-center">
+                <h2 class="mb-4 text-3xl font-bold">Subscribe to Our Newsletter</h2>
+                <p class="mb-8 text-lg">Join our community and never miss out on the latest health tips, expert
+                    advice,
+                    and exclusive offers.</p>
+            </div>
+            <div class="flex justify-center">
+                <form class="flex flex-col md:flex-row md:space-x-4">
+                    <input type="email" placeholder="Enter your email"
+                        class="px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                        required>
+                    <button type="submit"
+                        class="px-8 py-3 text-white transition-colors duration-300 bg-blue-500 rounded-lg hover:bg-blue-700">Subscribe
+                        Now</button>
+                </form>
+            </div>
+            <p class="mt-8 text-sm text-center text-gray-600">By subscribing, you agree to our <a href="#"
+                    class="text-blue-500 hover:underline">Terms</a> and acknowledge our <a href="#"
+                    class="text-blue-500 hover:underline">Privacy Policy</a>.</p>
+        </div>
+    </section>
+
+
+
+
+    <section id="recent-posts" class="p-1 sm:p-8">
+        <h2 class="text-2xl font-bold">Recent Posts</h2>
+
+        <div class="grid grid-cols-1 gap-4 mt-6 sm:grid-cols-3">
+            <!-- Post 1 -->
+            <div class="flex flex-col p-6 bg-white rounded-lg shadow">
+                <img class="object-cover w-full h-64 rounded-t-lg" src="/images/smoothie.jpg" alt="Post 1">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold">Nutritious Green Smoothies: Health in a Glass!
+                    </h3>
+                    <p class="mt-2 text-gray-600">Discover a plethora of recipes, tips, and benefits of
+                        incorporating green smoothies into your daily routine. Join me on this journey to revitalize
+                        your health, boost energy levels, and nourish your body with nature's vibrant greens. Let's
+                        sip our way to a healthier and happier life, one refreshing blend at a time! </p>
+                </div>
+                <div class="mt-auto"> <a href="posts/green-smoothies.html"
+                        class="inline-block px-4 py-2 text-white transition-colors duration-300 bg-blue-500 rounded-full hover:bg-blue-700">Learn
+                        More</a></div>
+            </div>
+
+            <!-- Post 2 -->
+            <div class="p-6 bg-white rounded-lg shadow">
+                <img src="/images/muscle.jpg" alt="Superfood 1" class="mb-4">
+                <h3 class="mb-2 text-xl font-bold">Why Focus on Gaining Muscles?</h3>
+                <p class="mb-4">Building muscle mass is essential for strength, aesthetics, and overall health. It helps
+                    improve metabolism, increases bone density, and enhances athletic performance. By following a proper
+                    workout routine and nutrition plan, you can effectively gain muscles and achieve your fitness goals.
+                </p>
+                <a href="posts/gaining-muscles.html"
+                    class="inline-block px-4 py-2 text-white transition-colors duration-300 bg-blue-500 rounded-full hover:bg-blue-700">Learn
+                    More</a>
+            </div>
+
+            <!-- Post 3 -->
+            <div class="p-6 bg-white rounded-lg shadow">
+                <img src="/images/fish.jpg" alt="Superfood 2" class="mb-4">
+                <h3 class="mb-2 text-xl font-bold">3 Healthy Fish Recipes</h3>
+                <p class="mb-4">
+                    Based on the content you've shared, here's a description that could be used for this page:
+
+                    Explore a World of Flavor with Healthy and Delicious Seafood Recipes
+
+                    Dive into the art of cooking seafood with our specially curated recipes, perfect for
+                    health-conscious food enthusiasts. Our collection includes three mouth-watering dishes, each
+                    promising a unique blend of taste and nutrition.</p>
+                <a href="posts/3-fish-recipes.html"
+                    class="inline-block px-4 py-2 text-white transition-colors duration-300 bg-blue-500 rounded-full hover:bg-blue-700">Learn
+                    More</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="most-viewed-posts" class="p-1 sm:p-8">
+        <h2 class="text-2xl font-bold">Most Viewed Posts</h2>
+
+        <div class="grid grid-cols-1 gap-4 mt-6 sm:grid-cols-3">
+            <!-- Post 1 -->
+            <div class="flex flex-col p-6 bg-white rounded-lg shadow">
+                <a href="/posts/breakfast-recipes-t5.html"><img class="object-cover w-full h-64 rounded-t-lg"
+                        src="https://img.freepik.com/free-photo/mix-common-food-allergens-people_23-2149870577.jpg?w=2000&t=st=1689774000~exp=1689774600~hmac=501b2ca0c4534215d38f611f66b7c3988b119d3f3ea55a1a17cda180c02a6021"
+                        alt="Post 4"></a>
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold">Understanding Protein and Its Importance</h3>
+                    <p class="mt-2 text-gray-600">Protein is an essential macronutrient that plays a crucial role in
+                        various bodily
+                        functions. It is responsible for building and repairing tissues, producing enzymes and hormones,
+                        and
+                        supporting the immune system. Including an adequate amount of protein in your diet is essential
+                        for
+                        overall
+                        health and well-being.</p>
+                </div>
+                <div class="mt-auto"> <a href="/posts/protein-diet.html"
+                        class="inline-block px-4 py-2 text-white transition-colors duration-300 bg-blue-500 rounded-full hover:bg-blue-700">Learn
+                        More</a></div>
+            </div>
+
+            <!-- Post 2 -->
+            <div class="flex flex-col p-6 bg-white rounded-lg shadow">
+                <a href="/posts/evening-routine.html"><img class="object-cover w-full h-64 rounded-t-lg"
+                        src="https://img.freepik.com/free-photo/grilled-chicken-breast-fresh-vegetable-salad-tomatoes-cucumbers-lettuce-leaves-chicken-salad-healthy-food_2829-4246.jpg?w=2000&t=st=1689773888~exp=1689774488~hmac=9d9103fc93ad7a7bf26b19432355df9c8e568e771730838f325047612233a069"
+                        alt="Post 5"></a>
+
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold">Why Choose a Low-Carb Diet?</h3>
+                    <p class="mt-2 text-gray-600">A low-carb diet focuses on reducing the consumption of carbohydrates,
+                        particularly
+                        refined grains, sugars, and processed foods. By adopting a low-carb approach, you can experience
+                        numerous
+                        health benefits. Low-carb nutrition can help with weight management, improve blood sugar
+                        control,
+                        enhance...</p>
+                </div>
+                <div class="mt-auto"> <a href="/posts/low-carb-nutrition.html"
+                        class="inline-block px-4 py-2 text-white transition-colors duration-300 bg-blue-500 rounded-full hover:bg-blue-700">Learn
+                        More</a></div>
+            </div>
+
+            <!-- Post 3 -->
+            <div class="flex flex-col p-6 bg-white rounded-lg shadow">
+                <img class="object-fill w-full h-64 rounded-t-lg" src="/images/swim.jpg" alt="Post 3">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold">Unlock Your Swimming Potential: Master Swim Techniques for
+                        Optimal Performance </h3>
+                    <p>From mastering the freestyle stroke to perfecting your
+                        breathing technique, we provide valuable insights, step-by-step instructions, and helpful
+                        tips from seasoned swimmers and coaches. Get ready to make a splash and take your swimming
+                        skills to the next level! </p>
+                </div>
+                <div class="mt-auto"> <a href="posts/swim-techniques.html"
+                        class="inline-block px-4 py-2 text-white transition-colors duration-300 bg-blue-500 rounded-full hover:bg-blue-700">Learn
+                        More</a></div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    </main>
+
+    <footer>
+
+
+        <br />
+        <br />
+
+        <div class="h-px bg-gray-400"></div>
+        <div class="h-px mb-16 bg-gray-400"></div>
+
+        <div class="justify-center ">
+        </div>
+
+        <div class="p-5 px-5 text-xs font-light text-black bg-white " id="footer">
+            <div class="flex justify-center">
+                <h1 class="text-4xl font-bold text-center text-gray-800 logo-font">
+                    Vita<span class="text-blue-400">Pex</span>
+                </h1>
+            </div>
+
+
+
+
+
+
+            <p style="text-align: center !important;"><span>
+                    vitapex.net &copy;2025, All Rights
+                    Reserved.</p>
+
+            <p style="text-align: center !important;"><span><a class="font-normal" href="/public/footer/disclaimer.html"
+                        target="_blank">Disclaimer</a> | <a class="font-normal"
+                        href="/public/footer/privacy-policy.html" target="_blank">Privacy</a> |
+                    <a class="font-normal" href="/public/footer/terms-of-service.html" target="_blank">Terms</a> |
+                    <a class="font-normal" href="/public/footer/contact.html" target="_blank">Contact</a></span></p>
+
+
+
+
+
+            <p class="max-w-screen-md mx-auto mt-8 text-xs font-thin text-center text-gray-600">Disclaimer: The
+                information
+                presented on this website is not intended as specific medical advice and is not a substitute for
+                professional
+                treatment or diagnosis. These statements have not been evaluated by the FDA. This product is not
+                intended to
+                diagnose, treat, cure or prevent any disease. Results may vary from one person to another.</p>
+
+        </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
