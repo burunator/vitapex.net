@@ -90,21 +90,38 @@
                 </div>
 
 
-                <div class="flex justify-end mr-6 font-medium text-gray-800">
-
-
-
-                </div>
 
                 <div class="flex justify-between mx-3 mt-1 ml-2 text-xs font-normal sm:font-light md:text-base">
+                    <p class="flex items-center mb-1 sm:text-xs">
+                        <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                        </svg>
+                        <span>Updated <span id="updated-date"></span></span>
+                    </p>
 
-                    <p class="flex mb-1 sm:text-xs"><i class="mr-1 text-base fa fa-calendar" aria-hidden="true"> </i>
-                        Updated January 10, 2026</p>
-                    <div class="flex sm:text-xs"> <i class="mr-1 text-base fa fa-eye" aria-hidden="true"></i> 629,346
-                        views</div>
-
+                    <div class="flex items-center sm:text-xs">
+                        <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                        </svg>
+                        <span>629,346 views</span>
+                    </div>
                 </div>
 
+                <script>
+
+                    (function () {
+                        const el = document.getElementById('updated-date');
+                        if (!el) return;
+                        const opts = { day: 'numeric', month: 'long', year: 'numeric' };
+                        el.textContent = new Date().toLocaleDateString('en-GB', opts).replace(',', '');
+                    })();
+                </script>
 
 
 
