@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>[Headline] | [Brand]</title>
+    <meta name="description" content="[1–2 sentence summary]" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Use system font stack for max speed; avoid heavy font loading -->
+    <style>
+        /* optional: critical CSS minimal */
+    </style>
+    <link href="/style.css" rel="stylesheet">
+</head>
+
+<body class="bg-white text-slate-900 antialiased">
+    <!-- Top utility bar -->
+    <div class="border-b bg-slate-50">
+        <div class="mx-auto flex max-w-5xl items-center justify-between px-4 py-2 text-xs text-slate-600">
+            <div class="flex gap-3">
+                <span>[Mon, Feb 18, 2026]</span>
+                <span class="hidden sm:inline">Health Desk</span>
+            </div>
+            <div class="flex gap-3">
+                <a class="hover:text-slate-900" href="/about">About</a>
+                <a class="hover:text-slate-900" href="/contact">Contact</a>
+                <a class="hover:text-slate-900" href="/privacy">Privacy</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Masthead -->
+    <header class="border-b">
+        <div class="mx-auto max-w-5xl px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-xl font-bold tracking-tight">[BRAND]</div>
+                <nav class="hidden md:flex gap-5 text-sm text-slate-700">
+                    <a class="hover:text-slate-950" href="#">Health</a>
+                    <a class="hover:text-slate-950" href="#">Wellness</a>
+                    <a class="hover:text-slate-950" href="#">Science</a>
+                    <a class="hover:text-slate-950" href="#">Lifestyle</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Disclosure -->
+    <div class="bg-amber-50 border-b">
+        <div class="mx-auto max-w-5xl px-4 py-2 text-xs text-amber-900">
+            <strong>ADVERTORIAL:</strong> Sponsored content. This page may contain affiliate links.
+        </div>
+    </div>
+
+    <!-- Main -->
+    <main class="mx-auto max-w-5xl px-4 py-6 lg:py-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+            <!-- Article -->
+            <article class="lg:col-span-8">
+                <div class="mb-4">
+                    <div class="text-xs font-semibold uppercase tracking-wider text-slate-500">[Category]</div>
+                    <h1 class="mt-2 text-3xl leading-tight font-extrabold tracking-tight sm:text-4xl">
+                        [Your Headline]
+                    </h1>
+                    <p class="mt-3 text-lg leading-relaxed text-slate-700">
+                        [Deck/Subheadline — 1–2 sentences]
+                    </p>
+
+                    <div class="mt-4 flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-slate-600">
+                        <span>By <span class="font-semibold text-slate-800">[Author Name]</span></span>
+                        <span class="text-slate-300">•</span>
+                        <span>Published: [Time]</span>
+                        <span class="text-slate-300">•</span>
+                        <span>Updated: [Time]</span>
+                    </div>
+                </div>
+
+                <!-- Hero -->
+                <figure class="mt-5">
+                    <img class="w-full rounded-lg border bg-slate-100" src="[hero.webp]" alt="[alt]" loading="eager" />
+                    <figcaption class="mt-2 text-xs text-slate-500">
+                        [Caption] <span class="text-slate-400">/ [Credit]</span>
+                    </figcaption>
+                </figure>
+
+                <!-- Key takeaways -->
+                <section class="mt-6 rounded-lg border bg-slate-50 p-4">
+                    <div class="text-sm font-semibold">Key takeaways</div>
+                    <ul class="mt-2 list-disc pl-5 text-sm leading-relaxed text-slate-700">
+                        <li>[Takeaway 1]</li>
+                        <li>[Takeaway 2]</li>
+                        <li>[Takeaway 3]</li>
+                    </ul>
+                </section>
+
+                <!-- Body -->
+                <div
+                    class="prose prose-slate mt-6 max-w-none prose-p:leading-relaxed prose-p:text-[18px] sm:prose-p:text-[19px]">
+                    <p><strong>[Lead]</strong> [First 2–3 short paragraphs. Keep lines short.]</p>
+
+                    <h2>[Subhead 1]</h2>
+                    <p>[Story-driven section]</p>
+
+                    <h2>[Subhead 2]</h2>
+                    <p>[Explanation/mechanism-style section — avoid medical cure claims]</p>
+
+                    <blockquote>
+                        <p>[Short pull-quote that sounds like a news excerpt]</p>
+                    </blockquote>
+
+                    <h2>[What happened next]</h2>
+                    <p>[Bridge into solution/video]</p>
+                </div>
+
+                <!-- Soft CTA -->
+                <div class="mt-8 rounded-lg border p-5">
+                    <div class="text-sm font-semibold">Watch the short video</div>
+                    <p class="mt-2 text-sm text-slate-700">
+                        [1–2 sentences: what they’ll learn, no promises, no “cure” language.]
+                    </p>
+                    <a href="[VSL_URL]"
+                        class="mt-4 inline-flex w-full items-center justify-center rounded-md bg-slate-900 px-4 py-3 text-sm font-semibold text-white hover:bg-slate-800">
+                        Watch Now
+                    </a>
+                    <p class="mt-2 text-xs text-slate-500">Sponsored content. Results may vary.</p>
+                </div>
+
+                <!-- FAQ -->
+                <section class="mt-10">
+                    <h3 class="text-lg font-bold">FAQ</h3>
+                    <div class="mt-4 space-y-3">
+                        <details class="rounded-lg border p-4">
+                            <summary class="cursor-pointer text-sm font-semibold">[Question 1]</summary>
+                            <p class="mt-2 text-sm text-slate-700">[Answer]</p>
+                        </details>
+                        <!-- repeat -->
+                    </div>
+                </section>
+
+                <!-- Strong CTA -->
+                <div class="mt-10 rounded-lg bg-slate-900 p-6 text-white">
+                    <div class="text-lg font-bold">[Final CTA headline]</div>
+                    <p class="mt-2 text-sm text-slate-200">[One sentence. Clear. Calm.]</p>
+                    <a href="[VSL_URL]"
+                        class="mt-4 inline-flex w-full items-center justify-center rounded-md bg-white px-4 py-3 text-sm font-semibold text-slate-900 hover:bg-slate-100">
+                        Watch the Video
+                    </a>
+                </div>
+
+                <!-- Disclaimer -->
+                <div class="mt-10 text-xs leading-relaxed text-slate-500">
+                    <p><strong>Disclosure:</strong> This is sponsored content and may contain affiliate links.</p>
+                    <p><strong>Health notice:</strong> This content is for informational purposes only and does not
+                        replace professional advice.</p>
+                </div>
+            </article>
+
+            <!-- Sidebar -->
+            <aside class="lg:col-span-4">
+                <div class="sticky top-6 space-y-6">
+                    <div class="rounded-lg border p-4">
+                        <div class="text-sm font-semibold">Most read</div>
+                        <ul class="mt-3 space-y-3 text-sm text-slate-700">
+                            <li><a class="hover:underline" href="#">[Link headline 1]</a></li>
+                            <li><a class="hover:underline" href="#">[Link headline 2]</a></li>
+                            <li><a class="hover:underline" href="#">[Link headline 3]</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="rounded-lg border bg-slate-50 p-4">
+                        <div class="text-sm font-semibold">Newsletter</div>
+                        <p class="mt-2 text-sm text-slate-700">Get weekly updates.</p>
+                        <form class="mt-3 flex gap-2">
+                            <input class="w-full rounded-md border px-3 py-2 text-sm" placeholder="Email" />
+                            <button
+                                class="rounded-md bg-slate-900 px-3 py-2 text-sm font-semibold text-white">Join</button>
+                        </form>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="border-t">
+        <div class="mx-auto max-w-5xl px-4 py-8 text-xs text-slate-500 space-y-2">
+            <div class="font-semibold text-slate-700">[BRAND]</div>
+            <div>Sponsored/Advertorial. Affiliate disclosure. Privacy • Terms • Contact</div>
+        </div>
+    </footer>
+</body>
+
+</html>
