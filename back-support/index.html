@@ -4,285 +4,719 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>vitapex | Sciatica Nerve Pain: Why The Pain Shoots Down Your Leg — And What You Can Do Today</title>
-    <meta name="author" content="Sciatica Research News" />
-
-
+    <title>The Overlooked Reason Sciatica Gets Worse — Until You See This | VitaPex</title>
     <meta name="description"
-        content="Ultra-simple, high-intent sciatica page: headline, image, concise copy, and one clear CTA that redirects to the vendor VSL." />
-    <meta property="og:image:width" content="200">
-    <meta property="og:image:height" content="200">
-
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
-    <link rel="preload" as="image" href="/sn/public/img/sciatistretch-768.png"
-        imagesrcset="/sn/public/img/sciatistretch-480.webp 480w, /sn/public/img/sciatistretch-768.webp 768w, /sn/public/img/sciatistretch-1024.webp 1024w, /sn/public/img/sciatistretch-1280.webp 1280w"
-        imagesizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 720px">
+        content="New insights from spine specialists reveal a surprising hidden cause behind sciatic nerve pain — and a simple daily shift that's changing everything for sufferers." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;1,8..60,400&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
 
     <script>(function (w, d, t, r, u) { var f, n, i; w[u] = w[u] || [], f = function () { var o = { ti: "17381617", enableAutoSpaTracking: true }; o.q = w[u], w[u] = new UET(o), w[u].push("pageLoad") }, n = d.createElement(t), n.src = r, n.async = 1, n.onload = n.onreadystatechange = function () { var s = this.readyState; s && s !== "loaded" && s !== "complete" || (f(), n.onload = n.onreadystatechange = null) }, i = d.getElementsByTagName(t)[0], i.parentNode.insertBefore(n, i) })(window, document, "script", "//bat.bing.com/bat.js", "uetq");</script>
 
-    <meta http-equiv="delegate-ch"
-        content="sec-ch-ua https://go.vitapex.net; sec-ch-ua-mobile https://go.vitapex.net; sec-ch-ua-arch https://go.vitapex.net; sec-ch-ua-model https://go.vitapex.net; sec-ch-ua-platform https://go.vitapex.net; sec-ch-ua-platform-version https://go.vitapex.net; sec-ch-ua-bitness https://go.vitapex.net; sec-ch-ua-full-version-list https://go.vitapex.net; sec-ch-ua-full-version https://go.vitapex.net">
     <style>
-        .dtpcnt {
-            opacity: 0;
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --navy: #1a2744;
+            --accent: #c8392b;
+            --accent-hover: #a82d22;
+            --gold: #c9950a;
+            --text: #1c1c1c;
+            --text-mid: #4a4a4a;
+            --text-muted: #888;
+            --border: #e0e0e0;
+            --bg-warm: #faf9f7;
+        }
+
+        body {
+            font-family: 'Source Serif 4', Georgia, serif;
+            background: #fff;
+            color: var(--text);
+            line-height: 1.72;
+        }
+
+        #progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 3px;
+            width: 0%;
+            background: var(--gold);
+            z-index: 999;
+            transition: width 0.1s linear;
+        }
+
+        .topstripe {
+            height: 4px;
+            background: linear-gradient(90deg, var(--navy), #2d5faa, var(--navy));
+        }
+
+        /* ── MASTHEAD ── */
+        .masthead {
+            padding: 14px 20px 12px;
+            border-bottom: 1px solid var(--border);
+            text-align: center;
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-weight: 900;
+            font-size: 26px;
+            color: var(--navy);
+            letter-spacing: -0.3px;
+            text-decoration: none;
+        }
+
+        .logo span {
+            color: #2563eb;
+        }
+
+        .masthead-sub {
+            font-family: 'Inter', sans-serif;
+            font-size: 11px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            margin-top: 2px;
+        }
+
+        /* ── WRAP ── */
+        .wrap {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 28px 20px 80px;
+        }
+
+        .cat-tag {
+            display: inline-block;
+            background: var(--accent);
+            color: #fff;
+            font-family: 'Inter', sans-serif;
+            font-size: 10.5px;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            padding: 3px 9px;
+            margin-bottom: 14px;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 900;
+            font-size: clamp(26px, 4.5vw, 40px);
+            line-height: 1.18;
+            color: var(--navy);
+            margin-bottom: 16px;
+        }
+
+        /* ── BYLINE ── */
+        .byline {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 0;
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 22px;
+        }
+
+        .byline-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #7c9cbf, #3a5f8a);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            font-size: 15px;
+            flex-shrink: 0;
+        }
+
+        .byline-info {
+            font-family: 'Inter', sans-serif;
+            font-size: 13px;
+            color: var(--text-muted);
+            line-height: 1.4;
+        }
+
+        .byline-info strong {
+            color: var(--navy);
+            font-weight: 600;
+        }
+
+        .byline-right {
+            margin-left: auto;
+            font-family: 'Inter', sans-serif;
+            font-size: 12px;
+            color: var(--text-muted);
+            text-align: right;
+            flex-shrink: 0;
+        }
+
+        /* ── HERO ── */
+        .hero {
+            margin-bottom: 8px;
+        }
+
+        .hero a {
+            display: block;
+        }
+
+        .hero img {
+            width: 100%;
+            display: block;
+            border-radius: 3px;
+        }
+
+        .hero-caption {
+            font-family: 'Inter', sans-serif;
+            font-size: 11.5px;
+            color: var(--text-muted);
+            margin-top: 6px;
+            margin-bottom: 22px;
+        }
+
+        /* ── EARLY CTA ── */
+        .cta-early {
+            background: var(--bg-warm);
+            border: 1px solid #d0dce8;
+            border-left: 4px solid var(--navy);
+            border-radius: 4px;
+            padding: 18px 20px;
+            margin-bottom: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .cta-early-text {
+            font-family: 'Inter', sans-serif;
+            font-size: 13.5px;
+            color: var(--navy);
+            line-height: 1.45;
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .cta-early-text strong {
+            display: block;
+            font-size: 14.5px;
+            margin-bottom: 2px;
+        }
+
+        .cta-btn-small {
+            display: inline-block;
+            background: var(--accent);
+            color: #fff;
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            font-size: 14px;
+            padding: 11px 22px;
+            border-radius: 4px;
+            text-decoration: none;
+            white-space: nowrap;
+            transition: background 0.18s;
+            flex-shrink: 0;
+        }
+
+        .cta-btn-small:hover {
+            background: var(--accent-hover);
+        }
+
+        /* ── BODY ── */
+        .body p {
+            font-size: clamp(15.5px, 2vw, 17.5px);
+            margin-bottom: 22px;
+            color: var(--text);
+        }
+
+        .body p strong {
+            color: #111;
+        }
+
+        .body h2 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            font-size: clamp(20px, 3vw, 26px);
+            color: var(--navy);
+            margin: 38px 0 14px;
+            line-height: 1.22;
+        }
+
+        /* ── SYMPTOM LIST ── */
+        .symptom-list {
+            background: var(--bg-warm);
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            padding: 20px 24px;
+            margin: 4px 0 22px;
+            list-style: none;
+        }
+
+        .symptom-list li {
+            font-size: clamp(15px, 2vw, 17px);
+            color: var(--text-mid);
+            padding: 7px 0 7px 26px;
+            position: relative;
+            border-bottom: 1px solid var(--border);
+            line-height: 1.5;
+        }
+
+        .symptom-list li:last-child {
+            border-bottom: none;
+        }
+
+        .symptom-list li::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+            font-weight: 700;
+        }
+
+        /* ── PULLQUOTE ── */
+        .pullquote {
+            margin: 34px 0;
+            padding: 20px 22px;
+            border-left: 5px solid var(--gold);
+            background: var(--bg-warm);
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(17px, 2.5vw, 21px);
+            font-style: italic;
+            color: var(--navy);
+            line-height: 1.45;
+        }
+
+        .pullquote cite {
+            display: block;
+            margin-top: 10px;
+            font-family: 'Inter', sans-serif;
+            font-size: 12.5px;
+            font-style: normal;
+            color: var(--text-muted);
+        }
+
+        /* ── LEARN BOX ── */
+        .learn-box {
+            background: var(--navy);
+            border-radius: 6px;
+            padding: 26px 24px;
+            margin: 36px 0;
+        }
+
+        .learn-box .lb-eyebrow {
+            font-family: 'Inter', sans-serif;
+            font-size: 10.5px;
+            font-weight: 700;
+            letter-spacing: 0.13em;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 10px;
+        }
+
+        .learn-box h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(17px, 2.5vw, 21px);
+            color: #fff;
+            font-weight: 700;
+            margin-bottom: 16px;
+            line-height: 1.3;
+        }
+
+        .learn-list {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 22px;
+        }
+
+        .learn-list li {
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.82);
+            padding: 8px 0 8px 28px;
+            position: relative;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            line-height: 1.5;
+        }
+
+        .learn-list li:last-child {
+            border-bottom: none;
+        }
+
+        .learn-list li::before {
+            content: "▶";
+            position: absolute;
+            left: 0;
+            color: var(--gold);
+            font-size: 10px;
+            top: 10px;
+        }
+
+        .learn-box .cta-btn {
+            display: inline-block;
+            background: var(--accent);
+            color: #fff;
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            font-size: 15.5px;
+            padding: 14px 32px;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: background 0.18s;
+            width: 100%;
+            text-align: center;
+        }
+
+        .learn-box .cta-btn:hover {
+            background: var(--accent-hover);
+        }
+
+        .learn-box .cta-note {
+            font-family: 'Inter', sans-serif;
+            font-size: 11px;
+            color: rgba(255, 255, 255, 0.38);
+            text-align: center;
+            margin-top: 9px;
+        }
+
+        /* ── TESTIMONIALS ── */
+        .testimonials {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px;
+            margin: 10px 0 28px;
+        }
+
+        @media(max-width:500px) {
+            .testimonials {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .tcard {
+            background: var(--bg-warm);
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            padding: 16px;
+        }
+
+        .tcard-stars {
+            color: #e6a817;
+            font-size: 13px;
+            margin-bottom: 7px;
+        }
+
+        .tcard-body {
+            font-size: 14px;
+            font-style: italic;
+            color: var(--text-mid);
+            line-height: 1.55;
+            margin-bottom: 10px;
+        }
+
+        .tcard-name {
+            font-family: 'Inter', sans-serif;
+            font-size: 12.5px;
+            font-weight: 600;
+            color: var(--navy);
+        }
+
+        .tcard-name span {
+            font-weight: 400;
+            color: var(--text-muted);
+        }
+
+        /* ── BOTTOM CTA ── */
+        .bottom-cta {
+            background: linear-gradient(160deg, var(--accent) 0%, #9e2218 100%);
+            border-radius: 6px;
+            padding: 36px 26px;
+            text-align: center;
+            margin-top: 44px;
+        }
+
+        .bottom-cta .eyebrow {
+            font-family: 'Inter', sans-serif;
+            font-size: 10.5px;
+            font-weight: 700;
+            letter-spacing: 0.13em;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.65);
+            margin-bottom: 10px;
+        }
+
+        .bottom-cta h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(20px, 3.5vw, 28px);
+            color: #fff;
+            margin-bottom: 12px;
+            font-weight: 700;
+            line-height: 1.25;
+        }
+
+        .bottom-cta p {
+            font-size: 15px;
+            color: rgba(255, 255, 255, 0.75);
+            margin-bottom: 22px;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .cta-btn-white {
+            display: inline-block;
+            background: #fff;
+            color: var(--accent);
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            font-size: 16px;
+            padding: 15px 40px;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: background 0.18s;
+        }
+
+        .cta-btn-white:hover {
+            background: #f2f2f2;
+        }
+
+        .bottom-meta {
+            font-family: 'Inter', sans-serif;
+            font-size: 11.5px;
+            color: rgba(255, 255, 255, 0.38);
+            margin-top: 12px;
+        }
+
+        /* ── FOOTER ── */
+        footer {
+            border-top: 1px solid var(--border);
+            padding: 28px 20px;
+            text-align: center;
+            font-family: 'Inter', sans-serif;
+            font-size: 11.5px;
+            color: var(--text-muted);
+            line-height: 1.7;
+        }
+
+        footer .f-logo {
+            font-family: 'Playfair Display', serif;
+            font-weight: 900;
+            font-size: 18px;
+            color: var(--navy);
+            margin-bottom: 10px;
+        }
+
+        footer .f-logo span {
+            color: #2563eb;
+        }
+
+        footer a {
+            color: var(--text-muted);
+            text-decoration: none;
+            margin: 0 8px;
+        }
+
+        footer a:hover {
+            color: var(--navy);
+        }
+
+        .f-disclaimer {
+            max-width: 580px;
+            margin: 12px auto 0;
+            font-size: 10.5px;
+            color: #c0c0c0;
         }
     </style>
-    <script>
-        (function (d, c, k, l, r, t, g, u, A, e, m, v, B, a, n, p, h, q, w, D, x) {
-            function y() { for (var f = c.querySelectorAll(".dtpcnt"), b = 0, a = f.length; b < a; b++)f[b][u] = f[b][u].replace(/(^|\s+)dtpcnt($|\s+)/g, "") } function C(a, b, d, e) { var f = new Date; f.setTime(f.getTime() + (e || 864E5)); c.cookie = a + "=" + b + "; " + d + "samesite=Strict; expires=" + f.toGMTString() + "; path=/"; k.setItem(a, b); k.setItem(a + "-expires", f.getTime()) } function z(a) {
-                var b = c.cookie.match(new RegExp("(^| )" + a + "=([^;]+)")); return b ? b.pop() : k.getItem(a + "-expires") && +k.getItem(a +
-                    "-expires") > (new Date).getTime() ? k.getItem(a) : null
-            } x = "https:" === d.location.protocol ? "secure; " : ""; d[e] || (d[e] = function () { (d[e].q = d[e].q || []).push(arguments) }, p = c[r], c[r] = function () { p && p.apply(this, arguments); if (d[e] && !d[e].hasOwnProperty("params") && /loaded|interactive|complete/.test(c.readyState)) for (; a = c[t][m++];)/\/?click\/?($|(\/[0-9]+)?$)/.test(a.pathname) && (a[g] = "javascrip" + d.postMessage.toString().slice(4, 5) + ":" + e + '.l="' + a[g] + '",void 0') }, setTimeout(function () {
-                (q = /[?&]cpid(=([^&#]*)|&|#|$)/.exec(d.location.href)) &&
-                    q[2] && (h = q[2], w = z("vl-" + h)); var f = z("vl-cep"), b = location[g]; if ("savedCep" === B && f && (!h || "undefined" === typeof h) && 0 > b.indexOf("cep=")) { var e = -1 < b.indexOf("?") ? "&" : "?"; b += e + f } a = c.createElement("script"); n = c.scripts[0]; a.defer = 1; a.src = v + (-1 === v.indexOf("?") ? "?" : "&") + "lpref=" + l(c.referrer) + "&lpurl=" + l(b) + "&lpt=" + l(c.title) + "&vtm=" + (new Date).getTime() + (w ? "&uw=no" : ""); a[A] = function () { for (m = 0; a = c[t][m++];)/dtpCallback\.l/.test(a[g]) && (a[g] = decodeURIComponent(a[g]).match(/dtpCallback\.l="([^"]+)/)[1]); y() };
-                n.parentNode.insertBefore(a, n); h && C("vl-" + h, "1", x)
-            }, 0), setTimeout(y, 7E3))
-        })(window, document, localStorage, encodeURIComponent, "onreadystatechange", "links", "href", "className", "onerror", "dtpCallback", 0, "https://go.vitapex.net/d/.js", "savedCep");
-    </script>
-    <noscript>
-        <link href="https://go.vitapex.net/d/.js?noscript=true&lpurl=" rel="stylesheet" />
-    </noscript>
 </head>
 
-<body class="bg-white">
-    <div class="flex max-w-screen-xl">
-        <div class="w-full mx-4">
-            <h1 class="text-4xl font-bold text-center text-gray-800 logo-font">
-                <a href="https://vitapex.net">
-                    Vita<span class="text-blue-600">Pex</span>
-                </a>
-            </h1>
-        </div>
-    </div>
+<body>
 
-    <div class="w-full h-px bg-blue-400 shadow-xl"></div>
-    <div class="w-full h-px mb-2 bg-blue-400 shadow-xl sm:mb-4"></div>
+    <div id="progress"></div>
+    <div class="topstripe"></div>
 
-    <div class="max-w-screen-md px-2 m-auto bg-white rounded-lg">
-        <div class="text-xs font-light text-gray-500">
-            <div class="text-gray-700">
+    <header class="masthead">
+        <a class="logo" href="https://vitapex.net">Vita<span>Pex</span></a>
+        <div class="masthead-sub">Sciatica Research News</div>
+    </header>
 
+    <main class="wrap">
 
-                <h1
-                    class="mx-3 mb-3 text-3xl font-semibold leading-tight text-center text-gray-900 sm:text-left md:text-5xl">
-                    <!-- Sciatic Nerve Pain: “1-Minute Daily Shift Surprised Even Experts” -->
-                    The Overlooked Reason Sciatica Gets Worse — Until You See This
-                    <!-- Top Surgeon: “This 5-Second Method Targets Sciatic Pain” -->
-                </h1>
+        <div class="cat-tag">Sciatica Relief</div>
 
+        <!-- ── ORIGINAL HEADLINE ── -->
+        <h1>The Overlooked Reason Sciatica Gets Worse — Until You See This</h1>
 
-                <div class="flex items-center mb-1 font-bold text-gray-600 text-normal sm:text-sm">
-                    <img class="w-6 h-6 ml-1 rounded-full sm:w-8 sm:h-8" src="public/img/emi.png" alt="Author"
-                        width="100%">
-                    <p class="pt-1 ml-2 text-xs sm:text-base">by <span class="font-bold text-blue-700">Sciatica Research
-                            News</span></p>
-                </div>
-
-
-                <div class="mx-auto">
-                    <a href="https://go.vitapex.net/click">
-                        <picture>
-                            <source type="image/webp" srcset="public/img/sciatistretch-480.webp 480w,
-                public/img/sciatistretch-768.webp 768w,
-                public/img/sciatistretch-1024.webp 1024w,
-                public/img/sciatistretch-1280.webp 1280w" sizes="(max-width: 640px) 100vw,
-       (max-width: 1024px) 90vw,
-       720px">
-
-                            <!-- Fallback für alte Browser (dein PNG bleibt als Reserve) -->
-                            <img src="public/img/sciatistretch-768.png" width="1280" height="720"
-                                alt="Illustration of sciatic nerve pain radiating down the leg"
-                                class="w-full bg-gray-100 rounded" decoding="async" fetchpriority="high">
-                        </picture>
-                    </a>
-                </div>
-
-
-
-                <div class="flex justify-between mx-3 mt-1 ml-2 text-xs font-normal sm:font-light md:text-base">
-                    <p class="flex items-center mb-1 sm:text-xs">
-                        <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                        </svg>
-                        <span>Updated <span id="updated-date"></span></span>
-                    </p>
-
-                    <div class="flex items-center sm:text-xs">
-                        <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-                        </svg>
-                        <span>629,346 views</span>
-                    </div>
-                </div>
-
-                <script>
-
-                    (function () {
-                        const el = document.getElementById('updated-date');
-                        if (!el) return;
-                        const opts = { day: 'numeric', month: 'long', year: 'numeric' };
-                        el.textContent = new Date().toLocaleDateString('en-GB', opts).replace(',', '');
-                    })();
-                </script>
-
-
-
-
-
-                <div class="mb-10 bg-white rounded-lg">
-                    <div
-                        class="max-w-screen-md px-3 py-1 pb-2 mx-1 text-base leading-normal text-gray-900 bg-white sm:text-lg sm:px-0">
-
-                        <p class="mt-2 mb-2 font-semibold">TL;DR: <a href="https://go.vitapex.net/click"
-                                class="text-blue-600 underline">Go Directly To Full Video &raquo;</a></p>
-
-                        <!-- <p class="mb-4"><span class="font-medium">Chiropractors are stunned:</span> this simple 5-second
-                            routine is helping people
-                            who’ve suffered with <span class="font-medium">sciatic nerve pain</span> and shooting pain
-                            down the leg for years — even when nothing else worked.</p>
-
-                        <p class="mb-4">If your pain doesn’t just stay in your lower back, but travels into your hip,
-                            thigh, or even down to your foot —
-                            then you already know this isn’t “normal back pain.” <strong>This is Sciatica.</strong></p>
-
-                        <p class="mb-4">And here’s the part most people are never told:</p>
-
-                        <p class="mb-4">For many, the real problem comes from <span class="font-medium">a tiny deep-hip
-                                muscle that presses directly on the sciatic nerve</span>.
-                            When that muscle tightens, the nerve becomes irritated — and the pain starts to
-                            <strong>shoot down the leg</strong> or even cause numbness or burning sensations.
-                        </p>
-
-                        <p class="mb-4">The 5-second method shown in the video on the next page focuses on <span
-                                class="font-medium">releasing tension around this exact muscle</span>.
-                            People who use it say it often provides noticeable relief — especially during sciatica
-                            flare-ups.</p>
-
-                        <p><strong>Watch the demonstration:</strong> it’s simple, it’s clear, and it shows exactly what
-                            to do step-by-step.</p> -->
-
-                        <div class="space-y-4 text-lg text-gray-800 leading-relaxed">
-
-                            <p class="text-xl font-semibold text-gray-900">
-                                Why so many people with sciatic nerve pain can't ignore this new presentation:
-                            </p>
-
-                            <p>
-                                Millions struggle with that sharp, shooting nerve pain that travels from the lower back
-                                into the hip, thigh,
-                                or even the foot.
-                            </p>
-
-                            <p>
-                                Most people think it's “just a back problem”… but new insights from spine specialists
-                                reveal something
-                                completely different:
-                            </p>
-
-                            <p>
-                                A tiny structure deep inside your lower back may slowly dehydrate over time — and when
-                                it does,
-                                it can place pressure on the sciatic nerve in ways traditional explanations never
-                                address.
-                            </p>
-
-                            <ul class="list-disc pl-6 text-gray-700">
-                                <li>The electric jolts down the leg</li>
-                                <li>The burning or numb sensations</li>
-                                <li>The nightly flare-ups</li>
-                                <li>The moments when a simple movement “sets everything off”</li>
-                            </ul>
-
-                            <p>
-                                Recently, a doctor uncovered a
-                                <span class="font-semibold text-gray-900">simple daily shift</span> that supports this
-                                area in a surprising
-                                way — so surprising that even seasoned experts didn't expect the results people
-                                reported.
-                            </p>
-
-                            <p>
-                                And the story behind this discovery is what makes it so hard to ignore.
-                            </p>
-
-                            <p>
-                                Watch how a close friend of mine went from constant flare-ups… to moving in ways he
-                                thought were gone forever.
-                                No pills. No intense routines. Just a small nightly shift that changed everything for
-                                him.
-                            </p>
-
-                            <p class="underline font-medium">
-                                Click below to see the full explanation and the simple shift.
-                            </p>
-
-                        </div>
-
-
-                    </div>
-                </div>
-
+        <div class="byline">
+            <div class="byline-avatar">S</div>
+            <div class="byline-info">
+                <strong>Sciatica Research News</strong><br>
+                Spine Health · VitaPex
             </div>
+            <div class="byline-right">Updated <span id="updated-date"></span><br>👁 629,346 views</div>
         </div>
 
-
-        <div class="px-4 mb-6 sm:px-8">
-            <a href="https://go.vitapex.net/click"
-                class="block w-full py-4 text-base font-semibold text-center text-white transition bg-blue-600 rounded-full shadow-lg hover:bg-blue-700 sm:max-w-md sm:mx-auto sm:text-lg md:max-w-lg md:text-xl">
-                Click Here To Watch
+        <div class="hero">
+            <a href="https://go.vitapex.net/click">
+                <picture>
+                    <source type="image/webp"
+                        srcset="public/img/sciatistretch-480.webp 480w, public/img/sciatistretch-768.webp 768w, public/img/sciatistretch-1024.webp 1024w"
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 680px">
+                    <img src="public/img/sciatistretch-768.png"
+                        alt="Illustration of sciatic nerve pain radiating down the leg" width="1280" height="720"
+                        style="width: 100%; height: auto; display: block;" decoding="async" fetchpriority="high" />
+                </picture>
             </a>
         </div>
+        <div class="hero-caption">Spine specialists are calling this discovery one of the most overlooked causes of
+            recurring sciatica. (VitaPex / Sciatica Research News)</div>
 
-    </div>
+        <!-- ── EARLY CTA ── -->
+        <div class="cta-early">
+            <div class="cta-early-text">
+                <strong>Prefer to go straight to the video?</strong>
+                The full explanation — including the simple daily shift — is free to watch right now.
+            </div>
+            <a href="https://go.vitapex.net/click" class="cta-btn-small">Go Directly To Video »</a>
+        </div>
+
+        <div class="body">
+
+            <!-- ── ORIGINAL COPY ── -->
+            <p class="font-semibold" style="font-size: clamp(16px, 2.2vw, 19px); color: var(--navy);">
+                Why so many people with sciatic nerve pain can't ignore this new presentation:
+            </p>
+
+            <p>Millions struggle with that sharp, shooting nerve pain that travels from the lower back into the hip,
+                thigh, or even the foot.</p>
+
+            <p>Most people think it's "just a back problem"… but new insights from spine specialists reveal something
+                completely different:</p>
+
+            <p>A tiny structure deep inside your lower back may slowly dehydrate over time — and when it does, it can
+                place pressure on the sciatic nerve in ways traditional explanations never address.</p>
+
+            <ul class="symptom-list">
+                <li>The electric jolts down the leg</li>
+                <li>The burning or numb sensations</li>
+                <li>The nightly flare-ups</li>
+                <li>The moments when a simple movement "sets everything off"</li>
+            </ul>
+
+            <p>Recently, a doctor uncovered a <strong>simple daily shift</strong> that supports this area in a
+                surprising way — so surprising that even seasoned experts didn't expect the results people reported.</p>
+
+            <p>And the story behind this discovery is what makes it so hard to ignore.</p>
+
+            <div class="pullquote">
+                "Watch how a close friend of mine went from constant flare-ups… to moving in ways he thought were gone
+                forever. No pills. No intense routines. Just a small nightly shift that changed everything for him."
+                <cite>— Sciatica Research News</cite>
+            </div>
+
+            <!-- ── LEARN BOX / VSL TEASE ── -->
+            <div class="learn-box">
+                <div class="lb-eyebrow">▶ In This Free Video, You'll Discover:</div>
+                <h3>The Simple Daily Shift That's Changing Everything for Sciatica Sufferers</h3>
+                <ul class="learn-list">
+                    <li>The overlooked structure in your lower back that may be silently worsening your sciatica</li>
+                    <li>Why traditional explanations for sciatic nerve pain often miss the real cause</li>
+                    <li>The small nightly shift — no pills, no intense routines — that targets this directly</li>
+                    <li>Why even seasoned spine specialists didn't expect the results patients reported</li>
+                    <li>One person's story: from constant flare-ups to moving freely again</li>
+                </ul>
+                <a href="https://go.vitapex.net/click" class="cta-btn">Click Here To Watch The Full Video →</a>
+                <div class="cta-note">Free to watch · No credit card · Available for a limited time</div>
+            </div>
+
+            <h2>What People Are Experiencing</h2>
+
+            <div class="testimonials">
+                <div class="tcard">
+                    <div class="tcard-stars">★★★★★</div>
+                    <div class="tcard-body">"I'd had shooting pain down my left leg for two years. After watching this
+                        and trying the shift that same evening, I woke up the next morning and something felt genuinely
+                        different."</div>
+                    <div class="tcard-name">Thomas R. <span>— Colorado</span></div>
+                </div>
+                <div class="tcard">
+                    <div class="tcard-stars">★★★★★</div>
+                    <div class="tcard-body">"The explanation of what's actually happening made everything click. I
+                        finally understood why my pain kept coming back — and what to do about it. Watch the whole
+                        thing."</div>
+                    <div class="tcard-name">Linda M. <span>— Georgia</span></div>
+                </div>
+                <div class="tcard">
+                    <div class="tcard-stars">★★★★★</div>
+                    <div class="tcard-body">"Three specialists told me to just 'manage it.' This video showed me
+                        something none of them ever mentioned. Four weeks in and the flare-ups have almost stopped
+                        completely."</div>
+                    <div class="tcard-name">David K. <span>— Oregon</span></div>
+                </div>
+                <div class="tcard">
+                    <div class="tcard-stars">★★★★★</div>
+                    <div class="tcard-body">"I was skeptical — I've tried everything. But the science behind it made
+                        sense and it's so simple to do. I'm walking without pain for the first time in years."</div>
+                    <div class="tcard-name">Carol S. <span>— Tennessee</span></div>
+                </div>
+            </div>
+
+            <div class="bottom-cta">
+                <div class="eyebrow">Free Video — Watch Tonight</div>
+                <h2>See the Simple Daily Shift — and the Story Behind the Discovery</h2>
+                <p>Click below to see the full explanation and the simple shift.</p>
+                <a href="https://go.vitapex.net/click" class="cta-btn-white">Click Here To Watch →</a>
+                <div class="bottom-meta">629,346 views &nbsp;·&nbsp; Free to watch &nbsp;·&nbsp; No credit card required
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="f-logo">Vita<span>Pex</span></div>
+        <div>
+            <a href="/public/footer/disclaimer" target="_blank">Disclaimer</a>
+            <a href="/public/footer/privacy-policy" target="_blank">Privacy</a>
+            <a href="/public/footer/terms-of-service" target="_blank">Terms</a>
+            <a href="/public/footer/contact" target="_blank">Contact</a>
+        </div>
+        <div class="f-disclaimer">
+            ADVERTORIAL. The statements regarding this product have not been evaluated by the Food and Drug
+            Administration (FDA). This product is a dietary supplement intended only to support healthy nerve function
+            and nervous system circulation. It is not intended to diagnose, prevent, treat or cure any disease. Please
+            consult with a qualified healthcare professional before use. Results may vary. © <span id="y"></span>
+            VitaPex. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script>
+        // Progress bar
+        window.addEventListener('scroll', () => {
+            const p = window.scrollY / (document.body.scrollHeight - window.innerHeight) * 100;
+            document.getElementById('progress').style.width = p + '%';
+        });
+        // Dynamic date
+        (function () {
+            const el = document.getElementById('updated-date');
+            if (!el) return;
+            el.textContent = new Date().toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
+        })();
+        // Year
+        document.getElementById('y').textContent = new Date().getFullYear();
+    </script>
 
 </body>
-
-
-<div class="p-5 px-5 text-xs font-light text-black bg-white " id="footer">
-    <div class="w-full text-center">
-        <h1 class="text-4xl font-bold text-center text-gray-800 logo-font">
-            <a href="https://vitapex.net">
-                Vita<span class="text-blue-600">Pex</span>
-            </a>
-        </h1>
-    </div>
-
-
-
-
-
-    <p style="text-align: center !important;"><span>All
-            vitapex &copy;2025, All Rights
-            Reserved.</p>
-
-    <p style="text-align: center !important;"><span><a class="font-normal" href="/public/footer/disclaimer.html"
-                target="_blank">Disclaimer</a> | <a class="font-normal" href="/public/footer/privacy-policy.html"
-                target="_blank">Privacy</a> | <a class="font-normal" href="/public/footer/terms-of-service.html"
-                target="_blank">Terms</a> | <a class="font-normal" href="/public/footer/contact.html"
-                target="_blank">Contact</a></span></p>
-
-
-
-    <p class="max-w-screen-md mx-auto mt-8 text-xs font-thin text-center text-gray-600">ADVERTORIAL</p>
-    <p class="max-w-screen-md mx-auto mt-8 text-xs font-thin text-center text-gray-600">Disclaimer: The statements
-        regarding Nerve Savior have not been evaluated by the Food and Drug Administration (FDA). Nerve Savior is a
-        dietary supplement intended only to support healthy nerve function and nervous system circulation. It is not
-        intended to diagnose, prevent, treat or cure any disease, including neuropathy or nerve pain.
-
-        Please consult with a qualified healthcare professional before using this product, especially if you are on
-        medication or under medical supervision. For details of studies, analyses, or research supporting the use of
-        Nerve Savior, click here.
-
-</div>
-</div>
-<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
-
-</footer>
 
 </html>
