@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why My Sciatica Kept Coming Back (I Finally Found Out Why)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --navy: #0c1d38;
+            --yellow: #f5c518;
+            --yellow-dark: #c9a000;
+            --red: #b52020;
+            --white: #ffffff;
+            --paper: #f8f5f0;
+            --ink: #1a1a1a;
+            --ink-mid: #404040;
+            --ink-light: #909090;
+            --rule: #e0dbd2;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Lora', Georgia, serif;
+            background: #ffffff;
+            color: var(--ink);
+            font-size: 18px;
+            line-height: 1.78;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* ─── TOP RULE ─────────────────────────────────── */
+        .top-rule {
+            height: 4px;
+            background: var(--navy);
+        }
+
+        /* ─── MINIMAL HEADER ───────────────────────────── */
+        .site-header {
+            background: var(--white);
+            border-bottom: 1px solid var(--rule);
+            padding: 11px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .site-header-name {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--ink-light);
+        }
+
+        .site-header-tag {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 10px;
+            color: var(--ink-light);
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            background: rgba(0, 0, 0, 0.05);
+            padding: 3px 8px;
+            border-radius: 2px;
+        }
+
+        /* ─── PAGE ─────────────────────────────────────── */
+        .page {
+            max-width: 780px;
+            margin: 0 auto;
+            padding: 0 18px 80px;
+        }
+
+        /* ─── ARTICLE HEAD ─────────────────────────────── */
+        .article-head {
+            padding: 32px 0 0;
+        }
+
+        .kicker {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--red);
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .kicker::before {
+            content: '';
+            width: 18px;
+            height: 2px;
+            background: var(--red);
+            flex-shrink: 0;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(23px, 5.2vw, 40px);
+            font-weight: 900;
+            line-height: 1.13;
+            color: var(--navy);
+            letter-spacing: -0.02em;
+            margin-bottom: 18px;
+        }
+
+        h1 em {
+            font-style: italic;
+            color: var(--red);
+        }
+
+        /* Author block — peer, not publisher */
+        .author-block {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 14px 0 22px;
+            border-bottom: 1px solid var(--rule);
+            margin-bottom: 28px;
+        }
+
+        .author-avatar {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #3a6186, #89253e);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 15px;
+            font-weight: 700;
+            color: white;
+            flex-shrink: 0;
+        }
+
+        .author-info {
+            flex: 1;
+        }
+
+        .author-name {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--ink);
+            display: block;
+        }
+
+        .author-meta {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 12px;
+            color: var(--ink-light);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 2px;
+        }
+
+        .author-meta-sep {
+            color: var(--rule);
+        }
+
+        .views-inline {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            font-weight: 600;
+            color: var(--navy);
+            font-size: 12px;
+        }
+
+        .views-inline::before {
+            content: '👁';
+            font-size: 11px;
+        }
+
+        /* ─── BODY COPY ─────────────────────────────────── */
+        .body {
+            font-size: clamp(15px, 2.3vw, 18px);
+            color: var(--ink-mid);
+            line-height: 1.8;
+        }
+
+        .body p {
+            margin-bottom: 22px;
+        }
+
+        .body p strong {
+            color: var(--ink);
+            font-weight: 700;
+        }
+
+        .body p em {
+            font-style: italic;
+            color: var(--ink);
+        }
+
+        /* Highlight */
+        .hl {
+            background: linear-gradient(105deg, rgba(245, 197, 24, 0.32) 0%, rgba(245, 197, 24, 0.14) 100%);
+            padding: 1px 3px;
+            border-radius: 2px;
+        }
+
+        /* Pull line — a single emphasized sentence */
+        .pull-line {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(18px, 3vw, 23px);
+            font-style: italic;
+            color: var(--navy);
+            line-height: 1.4;
+            border-left: 4px solid var(--yellow);
+            padding: 4px 0 4px 18px;
+            margin: 28px 0;
+        }
+
+        /* ─── INLINE CALLOUT ────────────────────────────── */
+        .callout {
+            background: var(--white);
+            border: 1.5px solid var(--yellow);
+            border-left: 5px solid var(--yellow-dark);
+            border-radius: 4px;
+            padding: 18px 20px;
+            margin: 26px 0;
+            box-shadow: 0 2px 16px rgba(245, 197, 24, 0.1);
+        }
+
+        .callout-label {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 10px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.16em;
+            color: var(--yellow-dark);
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .callout-label::before {
+            content: '▶';
+            font-size: 9px;
+        }
+
+        .callout p {
+            font-size: 15px;
+            line-height: 1.65;
+            margin: 0;
+        }
+
+        .callout strong {
+            color: var(--navy);
+            font-weight: 700;
+        }
+
+        /* ─── VIDEO THUMBNAIL ──────────────────────────── */
+        .video-section {
+            margin: 10px 0 8px;
+        }
+
+        .video-label {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.14em;
+            color: var(--ink-light);
+            text-align: center;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .video-label::before,
+        .video-label::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--rule);
+        }
+
+        .video-wrap {
+            display: block;
+            position: relative;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 8px 44px rgba(0, 0, 0, 0.25);
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .video-thumb svg {
+            display: block;
+            width: 100%;
+        }
+
+        .play-overlay {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.48) 100%);
+            transition: background 0.2s;
+        }
+
+        .video-wrap:hover .play-overlay {
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.12) 0%, rgba(0, 0, 0, 0.58) 100%);
+        }
+
+        .play-btn {
+            width: 74px;
+            height: 74px;
+            background: var(--yellow);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: pulse 2.2s ease-in-out infinite;
+            box-shadow: 0 4px 30px rgba(245, 197, 24, 0.55);
+            transition: transform 0.2s;
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                box-shadow: 0 4px 28px rgba(245, 197, 24, 0.5);
+                transform: scale(1);
+            }
+
+            50% {
+                box-shadow: 0 6px 48px rgba(245, 197, 24, 0.85);
+                transform: scale(1.06);
+            }
+        }
+
+        .video-wrap:hover .play-btn {
+            transform: scale(1.1);
+        }
+
+        .play-tri {
+            width: 0;
+            height: 0;
+            border-top: 13px solid transparent;
+            border-bottom: 13px solid transparent;
+            border-left: 21px solid var(--navy);
+            margin-left: 5px;
+        }
+
+        .play-label-text {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 13px;
+            font-weight: 600;
+            color: white;
+            margin-top: 12px;
+            letter-spacing: 0.04em;
+            text-shadow: 0 1px 5px rgba(0, 0, 0, 0.6);
+        }
+
+        .video-caption {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 12px;
+            color: var(--ink-light);
+            font-style: italic;
+            text-align: center;
+            margin-top: 8px;
+            margin-bottom: 28px;
+        }
+
+        /* ─── WHAT'S IN THE VIDEO ───────────────────────── */
+        .discover {
+            background: var(--navy);
+            border-radius: 5px;
+            overflow: hidden;
+            margin: 26px 0;
+        }
+
+        .discover-head {
+            padding: 14px 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .discover-head-lbl {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: var(--yellow);
+        }
+
+        .discover ul {
+            padding: 16px 20px 20px;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+        }
+
+        .discover li {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.82);
+            line-height: 1.5;
+            padding: 9px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+            display: flex;
+            gap: 10px;
+            align-items: flex-start;
+        }
+
+        .discover li:last-child {
+            border-bottom: none;
+        }
+
+        .discover li::before {
+            content: '→';
+            color: var(--yellow);
+            font-weight: 700;
+            flex-shrink: 0;
+            margin-top: 1px;
+        }
+
+        /* ─── CTA BLOCK ──────────────────────────────────── */
+        .cta {
+            text-align: center;
+            padding: 30px 20px;
+            background: var(--white);
+            border-radius: 5px;
+            border: 1px solid var(--rule);
+            margin: 26px 0;
+            box-shadow: 0 3px 20px rgba(0, 0, 0, 0.07);
+        }
+
+        .cta-eyebrow {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 11px;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: var(--ink-light);
+            margin-bottom: 10px;
+        }
+
+        .cta h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(19px, 3.5vw, 26px);
+            font-weight: 900;
+            color: var(--navy);
+            line-height: 1.2;
+            margin-bottom: 8px;
+        }
+
+        .cta-sub {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 14px;
+            color: var(--ink-mid);
+            margin-bottom: 22px;
+            line-height: 1.5;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #f5c518 0%, #c9a000 100%);
+            color: var(--navy);
+            font-family: 'DM Sans', sans-serif;
+            font-size: 17px;
+            font-weight: 700;
+            padding: 17px 36px;
+            border-radius: 4px;
+            text-decoration: none;
+            letter-spacing: 0.02em;
+            box-shadow: 0 4px 22px rgba(201, 160, 0, 0.45);
+            transition: transform 0.15s, box-shadow 0.15s;
+            cursor: pointer;
+            border: none;
+            animation: btn-glow 2.5s ease-in-out infinite;
+        }
+
+        @keyframes btn-glow {
+
+            0%,
+            100% {
+                box-shadow: 0 4px 22px rgba(201, 160, 0, 0.45);
+            }
+
+            50% {
+                box-shadow: 0 6px 36px rgba(201, 160, 0, 0.75);
+            }
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 40px rgba(201, 160, 0, 0.8);
+        }
+
+        .cta-btn::after {
+            content: ' ▶';
+            font-size: 13px;
+        }
+
+        .cta-tags {
+            margin-top: 12px;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 12px;
+            color: var(--ink-light);
+            display: flex;
+            justify-content: center;
+            gap: 14px;
+            flex-wrap: wrap;
+        }
+
+        .cta-tags span::before {
+            content: '✓ ';
+            color: #4caf50;
+        }
+
+        /* ─── COMMENTS SECTION ───────────────────────────── */
+        .comments {
+            margin: 8px 0 30px;
+        }
+
+        .comments-title {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.14em;
+            color: var(--ink-light);
+            text-align: center;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 18px;
+        }
+
+        .comments-title::before,
+        .comments-title::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--rule);
+        }
+
+        .comment {
+            display: flex;
+            gap: 12px;
+            padding: 16px 0;
+            border-bottom: 1px solid var(--rule);
+        }
+
+        .comment:last-child {
+            border-bottom: none;
+        }
+
+        .comment-avatar {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 13px;
+            font-weight: 700;
+            color: white;
+        }
+
+        .av-1 {
+            background: linear-gradient(135deg, #1e6b4a, #2d9b6f);
+        }
+
+        .av-2 {
+            background: linear-gradient(135deg, #2a4d7a, #4a7fbf);
+        }
+
+        .av-3 {
+            background: linear-gradient(135deg, #7a2a2a, #bf4a4a);
+        }
+
+        .comment-body {
+            flex: 1;
+        }
+
+        .comment-meta {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 12px;
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .comment-name {
+            font-weight: 700;
+            color: var(--ink);
+        }
+
+        .comment-loc {
+            color: var(--ink-light);
+        }
+
+        .comment-stars {
+            color: var(--yellow-dark);
+            font-size: 11px;
+            letter-spacing: 2px;
+        }
+
+        .comment p {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 14px;
+            line-height: 1.6;
+            color: var(--ink-mid);
+            margin: 0;
+        }
+
+        /* ─── DISCLAIMER ─────────────────────────────────── */
+        .disclaimer {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 11px;
+            color: var(--ink-light);
+            text-align: center;
+            padding: 20px 0;
+            border-top: 1px solid var(--rule);
+            line-height: 1.7;
+        }
+
+        /* ─── STICKY MOBILE ──────────────────────────────── */
+        .sticky {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: var(--navy);
+            padding: 10px 16px;
+            z-index: 200;
+            box-shadow: 0 -3px 20px rgba(0, 0, 0, 0.4);
+            align-items: center;
+            gap: 12px;
+        }
+
+        @media (max-width: 600px) {
+            .sticky {
+                display: flex;
+            }
+
+            body {
+                padding-bottom: 68px;
+            }
+        }
+
+        .sticky-text {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.3;
+            flex: 1;
+        }
+
+        .sticky-text strong {
+            display: block;
+            color: var(--yellow);
+            font-size: 14px;
+        }
+
+        .sticky-btn {
+            background: var(--yellow);
+            color: var(--navy);
+            font-family: 'DM Sans', sans-serif;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 10px 18px;
+            border-radius: 3px;
+            text-decoration: none;
+            white-space: nowrap;
+            flex-shrink: 0;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* ─── FADE IN ─────────────────────────────────────── */
+        .fi {
+            opacity: 0;
+            transform: translateY(16px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        .fi.on {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div
+        style="text-align:center;padding:5px;font-family:'DM Sans',Arial,sans-serif;font-size:10px;color:#aaa;letter-spacing:0.08em;background:#fff;border-bottom:1px solid #e0dbd2;">
+        Advertorial</div>
+
+    <div class="top-rule"></div>
+
+    <!-- MINIMAL HEADER — no links, just credibility label -->
+    <header class="site-header">
+        <span class="site-header-name">Wellness &amp; Spine</span>
+        <span class="site-header-tag">Personal Account</span>
+    </header>
+
+    <main class="page">
+
+        <!-- ARTICLE HEADER -->
+        <div class="article-head">
+            <div class="kicker">Reader Story · Sciatica</div>
+            <h1>
+                I Dealt With Sciatica For 6 Years —
+                Until Someone Showed Me <em>Why Nothing Was Working</em>
+            </h1>
+        </div>
+
+        <!-- AUTHOR BLOCK — peer identity, not publisher -->
+        <div class="author-block fi">
+            <div class="author-avatar">MR</div>
+            <div class="author-info">
+                <span class="author-name">Michael R., 64 — retired, Colorado Springs</span>
+                <div class="author-meta">
+                    <span>Posted 3 days ago</span>
+                    <span class="author-meta-sep">·</span>
+                    <span class="views-inline"><span id="vcounter">629,346</span>&nbsp;views</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- BODY COPY — first person monologue -->
+        <div class="body fi">
+
+            <p>
+                I want to start by saying I'm not a doctor. I'm not a health writer. I'm just a 64-year-old man who
+                spent six years waking up every morning wondering if today would be the day I couldn't get out of bed
+                anymore.
+            </p>
+
+            <p>
+                The shooting pain started in my lower back and ran straight down my left leg. Some days it was a dull
+                burn. Other days it felt like someone was driving a hot nail through my hip. I saw three different
+                doctors. Did physical therapy twice. Tried the injections. Took the medications until my stomach gave
+                out.
+            </p>
+
+            <p>
+                Every single time, the answer was the same: <strong>"It's your disc. There's not much we can do beyond
+                    managing it."</strong>
+            </p>
+
+            <p>
+                I accepted that for years. I stopped hiking. I stopped playing with my grandkids the way I used to. I
+                started planning my days around where I could sit down.
+            </p>
+
+        </div>
+
+        <!-- PULL LINE -->
+        <div class="pull-line fi">
+            "Then a friend — another guy dealing with the same thing — sent me a link. He said: just watch the first ten
+            minutes."
+        </div>
+
+        <div class="body fi">
+
+            <p>
+                I almost didn't click it. I'd been down that road before. Every "natural solution" and "breakthrough
+                discovery" I'd ever tried had done exactly nothing.
+            </p>
+
+            <p>
+                But what this doctor said in the first few minutes stopped me cold. He pulled up a study from the North
+                American Spine Society showing that <span class="hl">nearly 90% of people over 50 have disc problems —
+                    but feel zero pain whatsoever.</span>
+            </p>
+
+            <p>
+                Think about what that means. <strong>The thing I'd been told was the cause of my pain for six years…
+                    might have had nothing to do with it at all.</strong>
+            </p>
+
+            <p>
+                He went on to explain that there's a small structure deep inside the lower back — one that traditional
+                imaging rarely identifies and that conventional treatments never target. And when that structure is
+                disrupted, the sciatic nerve doesn't just flare up. It starts a slow process of deterioration. Each
+                episode gets a little worse than the last.
+            </p>
+
+        </div>
+
+        <!-- CALLOUT — the hook that keeps the gap open -->
+        <div class="callout fi">
+            <div class="callout-label">This is the part I can't stop thinking about</div>
+            <p>
+                He explained that the treatments most people rely on — the ones doctors prescribe automatically — may
+                actually be <strong>accelerating this process without anyone realizing it.</strong> I won't say more
+                than that here. You need to hear him explain it himself.
+            </p>
+        </div>
+
+        <div class="body fi">
+            <p>
+                I watched the whole thing. Twice. And I did the small thing he recommended that same night.
+            </p>
+            <p>
+                I'm not going to tell you my life changed overnight. But I will tell you that three weeks later I went
+                on a two-mile walk with my wife. First time in four years. She cried. I pretended not to.
+            </p>
+            <p>
+                I don't know if it'll do the same for you. But after six years of being told there was no answer —
+                finding out that nobody had even been looking at the right place changed everything for me. And I
+                figured if one person reads this and watches that video, it was worth writing.
+            </p>
+        </div>
+
+        <!-- VIDEO THUMBNAIL -->
+        <div class="video-section fi">
+            <div class="video-label">The video Michael is talking about</div>
+            <a href="https://{domain}{offer_link}" class="video-wrap">
+                <!-- IMAGE PLACEHOLDER — replace with your own image -->
+                <img src="public/img/0d2d22ccdf3737a755a5fbf0ccc85eb5.static.jpg" alt=""
+                    style="width:100%;display:block;">
+            </a>
+
+        </div>
+
+        <!-- DISCOVERY LIST -->
+        <div class="discover fi">
+            <div class="discover-head">
+                <span style="color:var(--yellow);font-size:15px;">▶</span>
+                <span class="discover-head-lbl">What the doctor reveals in the video:</span>
+            </div>
+            <ul>
+                <li>The overlooked structure that may be the real driver of recurring sciatica — and why it's almost
+                    never identified</li>
+                <li>Why the burning, the jolts, and the nightly flare-ups return no matter what treatment you try</li>
+                <li>The reason some common sciatica treatments may be making the root problem quietly worse over time
+                </li>
+                <li>The simple nightly shift — no pills, no routines — that targets this directly</li>
+            </ul>
+        </div>
+
+        <!-- PRIMARY CTA -->
+        <div class="cta fi">
+            <div class="cta-eyebrow">Free presentation — available now</div>
+            <h2>Watch the Video Michael Found</h2>
+            <p class="cta-sub">The full explanation is free to watch right now. No sign-up. No credit card. Just hit
+                play.</p>
+            <a href="https://{domain}{offer_link}" class="cta-btn">Watch the Free Video Now</a>
+            <div class="cta-tags">
+                <span>Free to watch</span>
+                <span>No credit card</span>
+                <span>Available now</span>
+            </div>
+        </div>
+
+        <!-- COMMENTS — social proof as peer reaction, not polished testimonials -->
+        <div class="comments fi">
+            <div class="comments-title">Comments from others who watched</div>
+
+            <div class="comment">
+                <div class="comment-avatar av-1">TR</div>
+                <div class="comment-body">
+                    <div class="comment-meta">
+                        <span class="comment-name">Thomas R.</span>
+                        <span class="comment-loc">Colorado</span>
+                        <span class="comment-stars">★★★★★</span>
+                    </div>
+                    <p>"Same experience as Michael. Six years of being told it was my disc. Watched the whole video in
+                        one sitting. Did what he said that same night. Woke up and something was different. Still can't
+                        fully explain it."</p>
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-avatar av-2">LM</div>
+                <div class="comment-body">
+                    <div class="comment-meta">
+                        <span class="comment-name">Linda M.</span>
+                        <span class="comment-loc">Georgia</span>
+                        <span class="comment-stars">★★★★★</span>
+                    </div>
+                    <p>"The part about why everything I'd tried wasn't working — that alone was worth watching. I
+                        finally understood it. Watch the whole thing, don't skip ahead."</p>
+                </div>
+            </div>
+
+            <div class="comment">
+                <div class="comment-avatar av-3">DK</div>
+                <div class="comment-body">
+                    <div class="comment-meta">
+                        <span class="comment-name">David K.</span>
+                        <span class="comment-loc">Oregon</span>
+                        <span class="comment-stars">★★★★★</span>
+                    </div>
+                    <p>"Three spine specialists told me to just manage it. None of them ever mentioned what this doctor
+                        talks about. Four weeks in and I'm walking without thinking about pain first."</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- FINAL CTA -->
+        <div class="cta fi">
+            <div class="cta-eyebrow" id="final-views">629,346 people have already watched</div>
+            <h2>Don't Spend Another Year Managing It</h2>
+            <p class="cta-sub">The video is free. Available right now. No sign-up required.</p>
+            <a href="https://{domain}{offer_link}" class="cta-btn">Watch Free Now</a>
+        </div>
+
+        <div class="disclaimer">
+            ADVERTORIAL. This is an advertisement and not an actual news article or personal testimonial.
+            The statements regarding this product have not been evaluated by the Food and Drug Administration.
+            This product is not intended to diagnose, treat, cure, or prevent any disease.
+            Names and identifying details have been changed. Individual results may vary.
+            Please consult a qualified healthcare professional before use. © 2026 All Rights Reserved.
+        </div>
+
+    </main>
+
+    <!-- STICKY MOBILE CTA -->
+    <div class="sticky">
+        <div class="sticky-text">
+            <strong>Free Video — Watch Now</strong>
+            The explanation Michael found
+        </div>
+        <a href="https://{domain}{offer_link}" class="sticky-btn">Watch ▶</a>
+    </div>
+
+    <script>
+        // View counter
+        (function () {
+            const el = document.getElementById('vcounter');
+            const fv = document.getElementById('final-views');
+            const target = 629346;
+            let cur = target - 700;
+            const tick = () => {
+                cur += Math.ceil((target - cur) / 10);
+                const fmt = cur.toLocaleString('en-US');
+                if (el) el.textContent = fmt;
+                if (fv) fv.textContent = fmt + ' people have already watched';
+                if (cur < target) requestAnimationFrame(tick);
+                else {
+                    const f = target.toLocaleString('en-US');
+                    if (el) el.textContent = f;
+                    if (fv) fv.textContent = f + ' people have already watched';
+                }
+            };
+            requestAnimationFrame(tick);
+            setInterval(() => {
+                if (!el) return;
+                const v = parseInt(el.textContent.replace(/,/g, ''));
+                if (Math.random() < 0.3) {
+                    const nv = (v + 1).toLocaleString('en-US');
+                    if (el) el.textContent = nv;
+                    if (fv) fv.textContent = nv + ' people have already watched';
+                }
+            }, 9500);
+        })();
+
+        // Fade in on scroll
+        const io = new IntersectionObserver(entries => {
+            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('on'); });
+        }, { threshold: 0.07 });
+        document.querySelectorAll('.fi').forEach(el => io.observe(el));
+    </script>
+</body>
+
+</html>
